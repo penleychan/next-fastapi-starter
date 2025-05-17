@@ -1,0 +1,1 @@
+NextJS, FastAPI, Docusarus

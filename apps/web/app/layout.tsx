@@ -1,0 +1,44 @@
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import { OpenAPI } from "@/lib/api/client";
+
+export const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+if (process.env.NODE_ENV === "production") {
+  OpenAPI.BASE = "https://next-fast-turbo.vercel.app";
+}
+
+export const metadata: Metadata = {
+  title: "Next-Fast-Turbo",
+  description: "A Next.js, FastAPI and Turbo project scaffol",
+  icons: {
+    icon: ["/favicon.png"],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(fontSans.variable, "bg-background font-sans")}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
