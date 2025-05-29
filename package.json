@@ -11,15 +11,23 @@
     "check-types": "turbo run check-types",
     "ui:add": "turbo run ui:add --filter=@repo/ui -- ",
     "poetry:add": "turbo run poetry:add --filter=api -- ",
-    "poetry:remove": "turbo run poetry:remove --filter=api -- "
+    "poetry:remove": "turbo run poetry:remove --filter=api -- ",
+    "prepare": "husky && husky install"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
+    "lint-staged": "^16.1.0",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "turbo": "^2.5.3",
     "typescript": "5.8.2"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,md}": "prettier --write"
   }
 }
