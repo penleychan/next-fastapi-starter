@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      lint-staged:
-        specifier: ^16.1.0
-        version: 16.1.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.2
@@ -18,6 +14,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
+      lint-staged:
+        specifier: ^16.1.0
+        version: 16.1.0
       prettier:
         specifier: ^3.5.3
         version: 3.5.3

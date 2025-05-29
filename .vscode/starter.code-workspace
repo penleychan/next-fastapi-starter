@@ -1,23 +1,23 @@
 {
   "folders": [
     {
-      "name": "API",
+      "name": "💻 API",
       "path": "../apps/api",
     },
     {
-      "name": "Web",
+      "name": "🌐 Web",
       "path": "../apps/web",
     },
     {
-      "name": "UI",
+      "name": "🍱 UI",
       "path": "../packages/ui",
     },
     {
-      "name": "Documentation",
+      "name": "📝 Documentation",
       "path": "../apps/docs",
     },
     {
-      "name": "root",
+      "name": "🌲 ROOT",
       "path": "../",
     },
   ],
