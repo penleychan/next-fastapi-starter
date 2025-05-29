@@ -27,6 +27,14 @@
     "@repo/ui#ui:add": {
       "cache": false,
       "interactive": true
+    },
+    "api#poetry:add": {
+      "cache": false,
+      "interactive": true
+    },
+    "api#poetry:remove": {
+      "cache": false,
+      "interactive": true
     }
   }
 }

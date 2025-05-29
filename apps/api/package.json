@@ -5,7 +5,9 @@
   "scripts": {
     "prestart": "poetry install",
     "dev": "./.venv/bin/python run.py",
-    "test": "./.venv/bin/python -m pytest"
+    "test": "./.venv/bin/python -m pytest",
+    "poetry:add": "poetry add",
+    "poetry:remove": "poetry remove"
   },
   "keywords": [],
   "author": ""

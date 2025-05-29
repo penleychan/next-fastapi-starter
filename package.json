@@ -9,7 +9,9 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "ui:add": "turbo run ui:add --filter=@repo/ui -- "
+    "ui:add": "turbo run ui:add --filter=@repo/ui -- ",
+    "poetry:add": "turbo run poetry:add --filter=api -- ",
+    "poetry:remove": "turbo run poetry:remove --filter=api -- "
   },
   "devDependencies": {
     "prettier": "^3.5.3",
