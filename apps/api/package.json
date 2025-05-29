@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prestart": "poetry install",
+    "dev": "./.venv/bin/python run.py",
+    "test": "./.venv/bin/python -m pytest"
+  },
+  "keywords": [],
+  "author": ""
+}
