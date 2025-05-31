@@ -21,4 +21,5 @@
       "path": "../",
     },
   ],
+  "remoteAuthority": "wsl+Ubuntu",
 }

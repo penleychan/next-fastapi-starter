@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prestart": "poetry install",
-    "dev": "./.venv/bin/python run.py",
-    "test": "./.venv/bin/python -m pytest",
+    "dev": "poetry run uvicorn src.main:app --reload --port 8000",
+    "test": "poetry run pytest",
     "poetry:add": "poetry add",
     "poetry:remove": "poetry remove"
   },
